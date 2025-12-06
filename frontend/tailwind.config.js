@@ -1,0 +1,91 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,vue}"],
+  theme: {
+    extend: {
+      colors: {
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+				primary: {
+					DEFAULT: 'hsl(var(--primary))',
+					foreground: 'hsl(var(--primary-foreground))'
+				},
+				azul: {
+					principal: '#00F7FF',
+					claro: '#B3FBFF',
+					escuro: '#00A8FF',
+				},
+				secondary: {
+					DEFAULT: 'hsl(var(--secondary))',
+					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				destructive: {
+					DEFAULT: 'hsl(var(--destructive))',
+					foreground: 'hsl(var(--destructive-foreground))'
+				},
+				muted: {
+					DEFAULT: 'hsl(var(--muted))',
+					foreground: 'hsl(var(--muted-foreground))'
+				},
+				accent: {
+					DEFAULT: 'hsl(var(--accent))',
+					foreground: 'hsl(var(--accent-foreground))'
+				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
+				card: {
+					DEFAULT: 'hsl(var(--card))',
+					foreground: 'hsl(var(--card-foreground))'
+				},
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
+				}
+			},
+      backgroundColor: {
+        'custom-pink': '#FAD5D0',
+        'custom-dark-pink': '#DD797E',
+        'custom-blue': '#1E2845',
+        'custom-dark-gray': '#A5A7A9',
+        'custom-gray': '#F0F0F1',
+        'custom-light-pink': '#DC8287'
+      },
+      textColor: {
+        'custom-pink': '#FAD5D0',
+        'custom-dark-pink': '#DD797E',
+        'custom-blue': '#1E2845',
+        'custom-dark-gray': '#A5A7A9',
+        'custom-gray': '#F0F0F1',
+        'custom-light-pink': '#DC8287'
+      },
+      borderColor: {
+        'custom-pink': '#FAD5D0',
+        'custom-dark-pink': '#DD797E',
+        'custom-blue': '#1E2845',
+        'custom-dark-gray': '#A5A7A9',
+        'custom-gray': '#F0F0F1',
+        'custom-light-pink': '#DC8287'
+      },
+      boxShadow: {
+        'custom-pink': '#FAD5D0',
+        'custom-dark-pink': '#DD797E',
+        'custom-blue': '#1E2845',
+        'custom-dark-gray': '#A5A7A9',
+        'custom-gray': '#F0F0F1',
+        'custom-light-pink': '#DC8287'
+      },
+    },
+  },
+  plugins: [require("daisyui")],
+}
